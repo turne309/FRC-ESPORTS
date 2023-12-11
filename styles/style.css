@@ -1,0 +1,22 @@
+.hero-background {
+  background-image: url("../images/hero-1.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-p {
+  backdrop-filter: blur(15px);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* .frosted-hero-container {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: fit-content;
+} */

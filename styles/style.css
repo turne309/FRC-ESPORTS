@@ -1,3 +1,11 @@
+/* 
+Color Pallet:
+Powder blue: 43BFC7 rgb(67, 191, 199)
+Teal: #69E9F5 rgb(105, 233, 245)
+Light Purple: 645FCE rgb(100, 95, 206)
+Dark purple: 40356F rgb(64, 53, 111)
+*/
+
 .hero-background {
   background-image: url("../images/hero-1.jpg");
   background-color: #cccccc;
@@ -13,10 +21,15 @@
   border-radius: 5px;
 }
 
-/* .frosted-hero-container {
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: fit-content;
+.series-container {
+  width: 26rem;
+  background-color: #645fce;
+  padding: 10px;
+  border-radius: 5px;
+  /* margin-right: 5px;
+  margin-left: ; */
+}
+
+/* .series-grid{
+  
 } */

@@ -4,10 +4,22 @@ Powder blue: 43BFC7 rgb(67, 191, 199)
 Teal: #69E9F5 rgb(105, 233, 245)
 Light Purple: 645FCE rgb(100, 95, 206)
 Dark purple: 40356F rgb(64, 53, 111)
+Light Blue: #2b87c6
+
+Hex	RGB -- https://www.color-hex.com/color-palette/7133
+Lightest  #00b8ff	(0,184,255)
+          #009bd6	(0,155,214)
+          #00719c	(0,113,156)
+          #00415a	(0,65,90)
+Darkest   #001f2b	(0,31,43)
 */
 
+.navbar{
+  background-color: #001f2b;
+}
+
 .hero-background {
-  background-image: url("../images/hero-1.jpg");
+  background-image: url("../images/FRC_Hero_noWatermark.png");
   background-color: #cccccc;
   height: 500px;
   background-position: center;
@@ -23,11 +35,9 @@ Dark purple: 40356F rgb(64, 53, 111)
 
 .series-container {
   width: 26rem;
-  background-color: #645fce;
+  background-color: #00b8ff;
   padding: 10px;
   border-radius: 5px;
-  /* margin-right: 5px;
-  margin-left: ; */
 }
 
 /* .series-grid{

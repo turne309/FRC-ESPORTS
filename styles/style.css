@@ -13,6 +13,9 @@ Lightest  #00b8ff	(0,184,255)
           #00415a	(0,65,90)
 Darkest   #001f2b	(0,31,43)
 */
+.mission-icon{
+  width: 4em;
+}
 
 .navbar{
   background-color: #001f2b;
@@ -40,6 +43,12 @@ Darkest   #001f2b	(0,31,43)
   border-radius: 5px;
 }
 
-/* .series-grid{
+.material-symbols-outlined {
   
-} */
+  /* font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24; */
+  width: 50px;
+}

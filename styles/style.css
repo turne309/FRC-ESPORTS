@@ -13,12 +13,17 @@ Lightest  #00b8ff	(0,184,255)
           #00415a	(0,65,90)
 Darkest   #001f2b	(0,31,43)
 */
+
+body{
+  background-color: #001f2b;
+}
+
 .mission-icon{
   width: 4em;
 }
 
 .navbar{
-  background-color: #001f2b;
+  background-color: #00b8ff;
 }
 
 .hero-background {
@@ -38,7 +43,7 @@ Darkest   #001f2b	(0,31,43)
 
 .series-container {
   width: 26rem;
-  background-color: #00b8ff;
+  background-color: #00415a;
   padding: 10px;
   border-radius: 5px;
 }

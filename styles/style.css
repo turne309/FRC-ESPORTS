@@ -12,10 +12,22 @@ Lightest  #00b8ff	(0,184,255)
           #00719c	(0,113,156)
           #00415a	(0,65,90)
 Darkest   #001f2b	(0,31,43)
+Gray      #666666
 */
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
 body{
   background-color: #001f2b;
+  
 }
 
 .mission-icon{
@@ -26,20 +38,97 @@ body{
   background-color: #00b8ff;
 }
 
+.navbar-brand{
+  background-color: #00415a;
+}
+
+.navbar-item:hover{
+  background-color:#666666;
+}
+
 .hero-background {
   background-image: url("../images/FRC_Hero_noWatermark.png");
-  background-color: #cccccc;
-  height: 500px;
+  /* filter: brightness(50%); */
+  height: 90vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.hero-p {
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+i {
+  display: block;
+  color: #000;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 60px; 
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+/* .hero-p {
   backdrop-filter: blur(15px);
   padding: 5px;
   border-radius: 5px;
-}
+} */
 
 .series-container {
   width: 26rem;
@@ -56,4 +145,10 @@ body{
   'GRAD' 0,
   'opsz' 24; */
   width: 50px;
+}
+
+.mission-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

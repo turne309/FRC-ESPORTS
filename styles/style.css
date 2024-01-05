@@ -23,11 +23,8 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-}
-
-body{
   background-color: #001f2b;
-  
+  /* background-image: url("../images/background.jpg"); */
 }
 
 .mission-icon{
@@ -124,12 +121,21 @@ i {
   animation: bounce 2s infinite;
 }
 
-/* .hero-p {
-  backdrop-filter: blur(15px);
-  padding: 5px;
-  border-radius: 5px;
-} */
-
+.card-cover-1{
+  background-size: cover;
+}
+.card-cover-2{
+  background-size: cover;
+}
+.card-div-2{
+  backdrop-filter: brightness(60%);
+}
+.card-cover-3{
+  background-size: cover;
+}
+.card-div-3{
+  backdrop-filter: brightness(60%);
+}
 .series-container {
   width: 26rem;
   background-color: #00415a;

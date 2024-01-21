@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+  </head>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="styles\registration.css" />
+  <body>
+    <div class="mobile-notAvail">
+      <div class="px-4 py-5 my-5 text-center">
+        <img
+          class="d-block mx-auto mb-4"
+          src="images\FRC_logo.png"
+          alt=""
+          width="72"
+          height="25"
+        />
+        <h1 class="display-5 fw-bold text-light">Hello!</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4 text-light">
+            Mobile devices aren't supported yet, please view on a larger device.
+          </p>
+        </div>
+      </div>
+      <!-- <h2 class="notAvail-text fs-2 text-light">Hello! Mobile devices aren't supported yet, please view on a larger device.</h2> -->
+    </div>
+    <!-- <container class="main" id="home">
+      <div
+        class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5"
+        tabindex="-1"
+        role="dialog"
+        id="modalSignin"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-4 shadow">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+              <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="modal-body p-5 pt-0">
+              <form class="">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control rounded-3"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="password"
+                    class="form-control rounded-3"
+                    id="floatingPassword"
+                    placeholder="Password"
+                  />
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <button
+                  class="w-100 mb-2 btn btn-lg rounded-3 btn-primary"
+                  type="submit"
+                >
+                  Sign up
+                </button>
+                <small class="text-body-secondary"
+                  >By clicking Sign up, you agree to the terms of use.</small
+                >
+                <hr class="my-4" />
+                <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                <button
+                  class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3"
+                  type="submit"
+                >
+                  <svg class="bi me-1" width="16" height="16">
+                    <use xlink:href="#twitter"></use>
+                  </svg>
+                  Sign up with Twitter
+                </button>
+                <button
+                  class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3"
+                  type="submit"
+                >
+                  <svg class="bi me-1" width="16" height="16">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                  Sign up with Facebook
+                </button>
+                <button
+                  class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3"
+                  type="submit"
+                >
+                  <svg class="bi me-1" width="16" height="16">
+                    <use xlink:href="#github"></use>
+                  </svg>
+                  Sign up with GitHub
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </container> -->
+
+    <div class="wrapper fadeInDown">
+      <div id="formContent">
+        <!-- Tabs Titles -->
+        <!-- <h2 class="active">Sign In</h2> -->
+        <h2 class="active underlineHover">Register</h2>
+        <!-- class="inactive" -->
+        <!-- Icon -->
+        <div class="fadeIn first">
+          <img src="images\FRC logo-dark.png" id="icon" alt="User Icon" />
+        </div>
+        <!-- Login Form -->
+        <form>
+          <input
+            type="text"
+            id="phone"
+            class="fadeIn second"
+            name="login"
+            placeholder="Phone Number"
+          />
+          <input
+            type="text"
+            id="name"
+            class="fadeIn third"
+            name="login"
+            placeholder="Name"
+          />
+          <input type="submit" class="fadeIn fourth" value="Send Link" />
+        </form>
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+          <a class="underlineHover" href="index.html">Home</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container footer-container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-light">© FRC-ESPORTS</p>
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-light">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-light">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-light">Affiliates</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-light">Become A Sponsor</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-light">Make a Donation</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</html>

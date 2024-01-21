@@ -5,7 +5,7 @@
 .mobile-notAvail {
   display: none;
 }
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 994px) {
   .mobile-notAvail {
     width: 100%;
     height: 100vh;
@@ -34,6 +34,7 @@
 
 html {
   background-color: #56baed;
+  scroll-behavior: smooth;
 }
 
 body {

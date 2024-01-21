@@ -21,26 +21,36 @@ body::-webkit-scrollbar {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
   background-color: #001f2b;
   /* background-image: url("../images/background.jpg"); */
 }
 
-.mission-icon{
+.mission-icon {
   width: 4em;
 }
+/* css for the sign up section */
+/* #how-to-start {
+  padding-top: 5vh;
+} */
+/* #how-to-start::before {
+  display: block;
+  height: 20vh;
+  content: "";
+} */
 
-.navbar{
+/* END of css for the sign up section */
+.navbar {
   background-color: #00b8ff;
 }
 
-.navbar-brand{
+.navbar-brand {
   background-color: #00415a;
 }
 
-.navbar-item:hover{
-  background-color:#666666;
+.navbar-item:hover {
+  background-color: #666666;
 }
 
 .hero-background {
@@ -53,7 +63,11 @@ body {
 }
 
 @-moz-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -moz-transform: translateY(0);
     transform: translateY(0);
   }
@@ -67,7 +81,11 @@ body {
   }
 }
 @-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
@@ -81,7 +99,11 @@ body {
   }
 }
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -webkit-transform: translateY(0);
@@ -112,7 +134,7 @@ i {
   left: 50%;
   margin-left: -20px;
   width: 40px;
-  height: 60px; 
+  height: 60px;
 }
 
 .bounce {
@@ -121,54 +143,81 @@ i {
   animation: bounce 2s infinite;
 }
 
-.card-cover-1{
-  background-size: cover;
+/* Start of series css */
+.series-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #00b8ff;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
 }
-.card-cover-2{
-  background-size: cover;
+
+.series-container:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00b8ff;
 }
-.card-div-2{
-  backdrop-filter: brightness(60%);
+
+.series-container:hover {
+  color: #00b8ff;
+  box-shadow: 0 0 5px #00b8ff;
+  /* text-shadow: 0 0 5px #00b8ff; */
 }
-.card-cover-3{
-  background-size: cover;
-}
-.card-div-3{
-  backdrop-filter: brightness(60%);
-}
+
 .series-container {
   width: 26rem;
+  height: 15em;
   background-color: #00415a;
   padding: 10px;
   border-radius: 5px;
+  transition: 0.5s;
 }
 
 .series-detail {
-  color: #2b87c6
+  color: #2b87c6;
 }
 
-.material-symbols-outlined {
-  
-  /* font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24; */
-  width: 50px;
+/* .series-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* END of series css */
+
+.card-cover-1 {
+  background-size: cover;
+}
+.card-cover-2 {
+  background-size: cover;
+}
+.card-div-2 {
+  backdrop-filter: brightness(60%);
+}
+.card-cover-3 {
+  background-size: cover;
+}
+.card-div-3 {
+  backdrop-filter: brightness(60%);
 }
 
-.mission-section{
+.mission-section {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 /* Mobile Handling */
-.mobile-notAvail{
+.mobile-notAvail {
   display: none;
 }
-@media only screen and (max-width: 770px) {
-  .mobile-notAvail{
+@media only screen and (max-width: 994px) {
+  .mobile-notAvail {
     width: 100%;
     height: 100vh;
     background-color: #00b8ff;
@@ -176,17 +225,17 @@ i {
     align-items: center;
     justify-content: center;
   }
-  .notAvail-text{
+  .notAvail-text {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     /* font */
   }
-  .main{
+  .main {
     display: none;
   }
-  .footer-container{
+  .footer-container {
     display: none;
   }
 }
